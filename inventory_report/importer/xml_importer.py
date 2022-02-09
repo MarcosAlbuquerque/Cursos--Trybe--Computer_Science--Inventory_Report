@@ -11,10 +11,10 @@ class XmlImporter(Importer):
             result = tree.getroot()
 
             for item in result:
-                listaDeObjetos = {}
+                list_of_objects = {}
                 for item in item:
-                    listaDeObjetos[item.tag] = item.text
-                list.append(listaDeObjetos)
+                    list_of_objects[item.tag] = item.text
+                list.append(list_of_objects)
                 return list
         else:
             raise ValueError("Arquivo inválido")
