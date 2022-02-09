@@ -1,9 +1,9 @@
-# reference https://docs.python.org/3/library/abc.html
+# # reference https://docs.python.org/3/library/abc.html
 
-from abc import ABC, abstractmethod
+# from abc import ABC, abstractmethod
 
 
-class Importer(ABC):
-    @abstractmethod
-    def import_data(file):
-        raise NotImplementedError
+# class Importer(ABC):
+#     @abstractmethod
+#     def import_data(file):
+#         raise NotImplementedError

@@ -1,18 +1,18 @@
-import xml.etree.ElementTree as ET
+# import xml.etree.ElementTree as ET
 
 
-class Reader:
+# class Reader:
 
-    @staticmethod
-    def read_xml(path):
-        content = []
-        root = ET.parse(path)
-        xml_content = root.getroot()
+#     @staticmethod
+#     def read_xml(path):
+#         content = []
+#         root = ET.parse(path)
+#         xml_content = root.getroot()
 
-        for record in xml_content:
-            row = {}
-            for record_row in record:
-                row[record_row.tag] = record_row.text
-                content.append(row)
+#         for record in xml_content:
+#             row = {}
+#             for record_row in record:
+#                 row[record_row.tag] = record_row.text
+#                 content.append(row)
 
-        return content
+#         return content
