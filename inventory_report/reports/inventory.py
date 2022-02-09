@@ -43,6 +43,13 @@ def xml_file(file, type):
     xml_file = Reader.read_xml(file)
     # xml_file = list(dict(file.getroot()))
 
+# def xml_file(file, type):
+#     xml_file = xmltodict.parse(file.read())
+#     if(type == 'simples'):
+#         return SimpleReport.generate(xml_file)
+#     if(type == 'completo'):
+#         return CompleteReport.generate(xml_file)
+
     if(type == 'simples'):
         return SimpleReport.generate(xml_file)
     if(type == 'completo'):
