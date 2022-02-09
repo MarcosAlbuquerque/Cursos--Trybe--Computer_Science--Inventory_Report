@@ -1,8 +1,9 @@
 from inventory_report.reports.complete_report import CompleteReport
 from inventory_report.reports.simple_report import SimpleReport
+from inventory_report.reports.xml_reader import Reader
 import csv
 import json
-import xmltodict
+# import xmltodict
 
 
 class Inventory:
@@ -39,7 +40,7 @@ def json_file(file, type):
 
 
 def xml_file(file, type):
-    xml_file = xmltodict.parse(file.read())
+    xml_file = Reader.read_xml(file)
     # xml_file = list(dict(file.getroot()))
 
     if(type == 'simples'):
