@@ -41,7 +41,7 @@ def json_file(file, type):
 
 def xml_file(file, type):
     xml_file = Reader.read_xml(file)
-    xml_file = list(dict(file.getroot()))
+    # xml_file = list(dict(file.getroot()))
     if(type == 'simples'):
         return SimpleReport.generate(xml_file)
     if(type == 'completo'):
