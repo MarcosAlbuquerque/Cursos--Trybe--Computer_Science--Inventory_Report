@@ -1,5 +1,5 @@
 from inventory_report.importer.importer import Importer
-import xml.etree.ElementTree as xmlFile
+import xml.etree.ElementTree as ET
 
 
 class XmlImporter(Importer):
@@ -7,7 +7,7 @@ class XmlImporter(Importer):
     def import_data(cls, path):
         if path.endswith(".xml"):
             list = []
-            tree = xmlFile.parse(path)
+            tree = ET.parse(path)
             result = tree.getroot()
 
             for item in result:
