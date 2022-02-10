@@ -3,7 +3,6 @@ from inventory_report.reports.simple_report import SimpleReport
 from inventory_report.reports.xml_reader import Reader
 import csv
 import json
-# import xmltodict
 
 
 class Inventory:
